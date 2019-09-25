@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AdvanceSearch.iml" filepath="$PROJECT_DIR$/.idea/AdvanceSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hrdocs/.idea/hrdocs.iml" filepath="$PROJECT_DIR$/../hrdocs/.idea/hrdocs.iml" />
+    </modules>
+  </component>
+</project>
