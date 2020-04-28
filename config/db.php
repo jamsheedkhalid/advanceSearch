@@ -6,9 +6,9 @@
  */
 
 $servername = "localhost";
-$username = "reports2018";
-$password = "Indepth2018";
-$DB = "alsanawabar";
+$username = "demo";
+$password = "Indepth@2019";
+$DB = "alsanawbar";
 
 $conn = new mysqli($servername, $username, $password, $DB);
 

@@ -51,7 +51,7 @@ if ($ExecQuery->num_rows > 0) {
                  "<td style='text-align:right'>".$row['ar_name']."</td>".
                  "<td>".$row['admission_no']."<br>". engtoarabic($row['admission_no'])."</td>".
                  "<td>".$row['familyid']."<br>". engtoarabic($row['familyid'])."</td>"
-                 ."<td><a class='btn btn-sm btn-primary' href='https://alsanawbar.school/student/profile/".$row['id']."'>View Profile</a></td></tr>";
+                 ."<td><a class='btn btn-sm btn-primary' target='_blank' href='http://demo.indepth.ae/student/profile/".$row['id']."'>View Profile</a></td></tr>";
      }
      
      echo "</table>";
@@ -88,7 +88,7 @@ else if ($option == 5) {
                 "<td>" . $row['office'] . "<br>" . engtoarabic($row['office']) . "</td><td>";
             if ($ExecQuery2->num_rows > 0) {
                 while ($row2 = $ExecQuery2->fetch_assoc()) {
-                    echo "<a href='https://alsanawbar.school/student/profile/".$row2['id']."'>". $row2['admission_no']."</a>" . "<br>";
+                    echo "<a target='_blank' href='http://demo.indepth.ae/student/profile/".$row2['id']."'>". $row2['admission_no']."</a>" . "<br>";
                 }
              "</td></tr>";
             }
