@@ -32,8 +32,9 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <input type="text" id="search"  onkeyup="showStudents(this.value,option)" class="form-control" placeholder ="Family ID, STUDENT(ID/Name), PARENT(Name/Mobile)">
+        <input type="text" id="search"  onkeyup="showStudents(this.value,option)" class="form-control">
     </div>
+
     <div class="row">
        <div class="col"><label for="all" class="radio-inline" style="font-size: 14px"><input type="radio" name="optradio" id="all" onclick="option = 1; searchOption(option);" checked> All  </label></div>
        <div class="col"><label for="st_id" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="st_id" onclick="option = 2;searchOption(option)">Student ID  </label></div>
