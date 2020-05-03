@@ -27,12 +27,19 @@
     #results td {
         font-size : 20px;
     }
+    form{
+        width : 100%;
+    }
 </style>
 </head>
 <body>
 <div class="container-fluid">
-    <div class="row">
-        <input type="text" id="search"  onkeyup="showStudents(this.value,option)" class="form-control">
+    <div class="row"> 
+        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+    aria-label="Search" onkeyup="showStudents(this.value,option)">
+        </form>
     </div>
 
     <div class="row">
