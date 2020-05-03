@@ -22,46 +22,32 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+<style>
+    #results td {
+        font-size : 20px;
+    }
+</style>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-7">
-            <div class="md-form">
-                <input type="text" id="search"  onkeyup="showStudents(this.value,option)" class="form-control">
-                <small id="searchHelp" class="form-text text-muted"><b>Enter family ID, student ID, student name, parent name, contact number  </b></small>
-                <label for="search">Search Student/Parent</label>
-            </div>
-
-                <label for="all" class="radio-inline" style="font-size: 14px"><input type="radio" name="optradio" id="all" onclick="option = 1; searchOption(option);" checked> All  </label>
-                <label for="st_id" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="st_id" onclick="option = 2;searchOption(option)">Student ID  </label>
-                <label for="fm_id" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="fm_id" onclick="option = 3;searchOption(option)"> Family ID  </label>
-                <label for="st_name" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="st_name" onclick="option = 4;searchOption(option)"> Student Name </label>
-                <label for="fm_name" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="fm_name" onclick="option = 5;searchOption(option)"> Family Details </label>
-                <label for="number" class="radio-inline " style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="number" onclick="option = 6;searchOption(option)"> Contact Number</label>
-
-
-
-        </div>
-        <div class="col-sm">
-        </div>
+        <input type="text" id="search"  onkeyup="showStudents(this.value,option)" class="form-control" placeholder ="Family ID, STUDENT(ID/Name), PARENT(Name/Mobile)">
     </div>
     <div class="row">
-        <div class="col">
-
-        </div>
-        <div class="col-10">
-            <div id='tableStudents' style="padding-top: 20px;">
-
-            </div>
-        </div>
-        <div class="col">
-        </div>
-
+       <div class="col"><label for="all" class="radio-inline" style="font-size: 14px"><input type="radio" name="optradio" id="all" onclick="option = 1; searchOption(option);" checked> All  </label></div>
+       <div class="col"><label for="st_id" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="st_id" onclick="option = 2;searchOption(option)">Student ID  </label></div>
+       <div class="col"><label for="fm_id" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="fm_id" onclick="option = 3;searchOption(option)"> Family ID  </label></div>
+       <div class="col"><label for="st_name" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="st_name" onclick="option = 4;searchOption(option)"> Student Name </label></div>
+       <div class="col"><label for="fm_name" class="radio-inline" style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="fm_name" onclick="option = 5;searchOption(option)"> Family Details </label></div>
+       <div class="col"><label for="number" class="radio-inline " style="padding-left: 5px; font-size: 14px"><input type="radio" name="optradio" id="number" onclick="option = 6;searchOption(option)"> Contact Number</label></div>
     </div>
 </div>
+
+<div class="container-fluid">
+    <div id='tableStudents' style="padding-top: 20px;"></div>
+</div>
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

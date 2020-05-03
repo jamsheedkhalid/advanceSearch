@@ -36,7 +36,7 @@ if($option == 6) {
 $ExecQuery = MySQLi_query($conn, $sql);
 if ($ExecQuery->num_rows > 0) {
     $si =0;
-     echo " <table class='table table-bordered ' style='text-align:center'> <thead class=thead-dark ><tr>
+     echo " <table id='results' class='table table-bordered table-hover table-responsive-xl' style='text-align:center'> <thead class=thead-dark ><tr>
                                             <th>SI No. <br> رقم</th>
                                             <th>Name </th>
                                             <th style='font-size:20px'>اسم</th>
