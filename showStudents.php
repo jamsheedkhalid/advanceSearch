@@ -51,7 +51,7 @@ if ($ExecQuery->num_rows > 0) {
                  "<td style='text-align:right'>".$row['ar_name']."</td>".
                  "<td>".$row['admission_no']."<br>". engtoarabic($row['admission_no'])."</td>".
                  "<td>".$row['familyid']."<br>". engtoarabic($row['familyid'])."</td>"
-                 ."<td><a class='btn btn-sm btn-primary' target='_blank' href='http://demo.indepth.ae/student/profile/".$row['id']."'>View Profile</a></td></tr>";
+                 ."<td><a class='btn btn-sm btn-primary' target='_blank' href='http://alsanawbar.school/student/profile/".$row['id']."'>View Profile</a></td></tr>";
      }
      
      echo "</table>";
