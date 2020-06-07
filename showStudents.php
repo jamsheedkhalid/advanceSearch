@@ -88,7 +88,7 @@ else if ($option == 5) {
                 "<td>" . $row['office'] . "<br>" . engtoarabic($row['office']) . "</td><td>";
             if ($ExecQuery2->num_rows > 0) {
                 while ($row2 = $ExecQuery2->fetch_assoc()) {
-                    echo "<a target='_blank' href='http://demo.indepth.ae/student/profile/".$row2['id']."'>". $row2['admission_no']."</a>" . "<br>";
+                    echo "<a target='_blank' href='http://alsanawbar.school/student/profile/".$row2['id']."'>". $row2['admission_no']."</a>" . "<br>";
                 }
              "</td></tr>";
             }
